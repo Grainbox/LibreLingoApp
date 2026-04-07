@@ -1,0 +1,33 @@
+{
+  "name": "librelingo-app",
+  "description": "LibreLingo frontend: Language learning app built with Expo, React Native, and Expo Web",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "expo-router": "^4.0.0",
+    "expo-status-bar": "~3.0.0",
+    "react": "18.3.0",
+    "react-native": "0.74.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "@types/react-native": "^0.73.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-expo": "^7.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
