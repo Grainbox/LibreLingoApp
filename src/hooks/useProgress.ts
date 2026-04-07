@@ -3,7 +3,7 @@
  * (Placeholder - implemented in GAME-01)
  */
 
-import { UserProgress, UserStats } from "@types/index";
+import type { UserProgress, UserStats } from "../types";
 
 export function useProgress() {
   // TODO: Implement progress tracking

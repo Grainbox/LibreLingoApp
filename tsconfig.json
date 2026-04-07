@@ -9,7 +9,6 @@
     "declarationMap": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
