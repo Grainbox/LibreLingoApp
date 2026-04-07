@@ -1,51 +1,66 @@
 /**
- * Spacing scale for LibreLingo
- * Used for padding, margin, gaps throughout the app
+ * LibreLingo Spacing Scale
+ * Based on 8px grid system for consistency
  */
 
 export const spacing = {
-  xs: 4,
-  sm: 8,
-  md: 16,
-  lg: 24,
-  xl: 32,
-  xxl: 48,
+  // Base scale (8px multiples)
+  xs: 4,      // 4px
+  sm: 8,      // 8px
+  md: 12,     // 12px
+  lg: 16,     // 16px
+  xl: 24,     // 24px
+  "2xl": 32,  // 32px
+  "3xl": 40,  // 40px
+  "4xl": 48,  // 48px
+  "5xl": 64,  // 64px
+
+  // Semantic shortcuts
+  gutter: 16,           // Standard horizontal padding
+  section: 24,          // Space between sections
+  componentGap: 12,     // Space between components
+  borderRadius: 8,      // Default border radius
+  borderRadiusLg: 12,   // Large border radius
+  borderRadiusXl: 16,   // Extra large border radius
+
+  // Safe area offsets (mobile)
+  safeTop: 16,
+  safeBottom: 16,
 };
 
 /**
- * Typography scale
- * Font sizes and line heights for consistent text styling
+ * Dimensions for common UI elements
  */
+export const dimensions = {
+  // Button sizes
+  buttonHeight: {
+    sm: 32,
+    md: 44,
+    lg: 56,
+  },
 
-export const typography = {
-  h1: {
-    fontSize: 32,
-    fontWeight: "700",
-    lineHeight: 40,
+  // Tab bar height
+  tabBarHeight: 64,
+
+  // Card heights
+  cardHeight: {
+    sm: 80,
+    md: 120,
+    lg: 160,
   },
-  h2: {
-    fontSize: 28,
-    fontWeight: "700",
-    lineHeight: 36,
+
+  // Icon sizes
+  iconSize: {
+    sm: 16,
+    md: 24,
+    lg: 32,
+    xl: 48,
   },
-  h3: {
-    fontSize: 24,
-    fontWeight: "600",
-    lineHeight: 32,
-  },
-  body: {
-    fontSize: 16,
-    fontWeight: "400",
-    lineHeight: 24,
-  },
-  bodySmall: {
-    fontSize: 14,
-    fontWeight: "400",
-    lineHeight: 20,
-  },
-  label: {
-    fontSize: 12,
-    fontWeight: "600",
-    lineHeight: 16,
+
+  // Avatar
+  avatarSize: {
+    sm: 32,
+    md: 48,
+    lg: 64,
   },
 };

@@ -9,6 +9,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
@@ -17,6 +19,8 @@
       "@hooks/*": ["./src/hooks/*"],
       "@utils/*": ["./src/utils/*"],
       "@types/*": ["./src/types/*"],
+      "@db/*": ["./src/db/*"],
+      "@theme": ["./src/theme/index.ts"],
       "@theme/*": ["./src/theme/*"]
     }
   },

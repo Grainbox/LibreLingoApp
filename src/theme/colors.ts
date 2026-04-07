@@ -1,47 +1,97 @@
 /**
- * Color palette for LibreLingo
- * Used throughout the app for consistent theming
+ * LibreLingo Color Palette
+ * Designed for language learning with emphasis on clarity and engagement
  */
 
 export const colors = {
-  // Primary colors
-  primary: "#007AFF", // iOS blue
-  secondary: "#5AC8FA", // Light blue
+  // Primary palette - Learning & Action
+  primary: {
+    50: "#f0f9ff",
+    100: "#e0f2fe",
+    200: "#bae6fd",
+    300: "#7dd3fc",
+    400: "#38bdf8",
+    500: "#0ea5e9", // Primary blue
+    600: "#0284c7",
+    700: "#0369a1",
+    800: "#075985",
+    900: "#0c3a66",
+  },
 
-  // Semantic colors
-  success: "#34C759",
-  warning: "#FF9500",
-  error: "#FF3B30",
-  info: "#5AC8FA",
+  // Success palette - Correct answers
+  success: {
+    50: "#f0fdf4",
+    100: "#dcfce7",
+    200: "#bbf7d0",
+    300: "#86efac",
+    400: "#4ade80",
+    500: "#22c55e", // Primary green
+    600: "#16a34a",
+    700: "#15803d",
+    800: "#166534",
+    900: "#145231",
+  },
 
-  // Neutral colors
-  white: "#FFFFFF",
-  black: "#000000",
-  gray: {
-    50: "#F9FAFB",
-    100: "#F3F4F6",
-    200: "#E5E7EB",
-    300: "#D1D5DB",
-    400: "#9CA3AF",
-    500: "#6B7280",
-    600: "#4B5563",
+  // Warning palette - Incorrect/Caution
+  warning: {
+    50: "#fffbeb",
+    100: "#fef3c7",
+    200: "#fde68a",
+    300: "#fcd34d",
+    400: "#fbbf24",
+    500: "#f59e0b", // Primary amber
+    600: "#d97706",
+    700: "#b45309",
+    800: "#92400e",
+    900: "#78350f",
+  },
+
+  // Danger palette - Errors/Loss of lives
+  danger: {
+    50: "#fef2f2",
+    100: "#fee2e2",
+    200: "#fecaca",
+    300: "#fca5a5",
+    400: "#f87171",
+    500: "#ef4444", // Primary red
+    600: "#dc2626",
+    700: "#b91c1c",
+    800: "#991b1b",
+    900: "#7f1d1d",
+  },
+
+  // Neutral palette - UI background & text
+  neutral: {
+    0: "#ffffff",
+    50: "#f9fafb",
+    100: "#f3f4f6",
+    200: "#e5e7eb",
+    300: "#d1d5db",
+    400: "#9ca3af",
+    500: "#6b7280",
+    600: "#4b5563",
     700: "#374151",
-    800: "#1F2937",
+    800: "#1f2937",
     900: "#111827",
   },
 
-  // Component-specific
-  text: {
-    primary: "#000000",
-    secondary: "#6B7280",
-    disabled: "#D1D5DB",
-    inverse: "#FFFFFF",
-  },
-  bg: {
-    default: "#FFFFFF",
-    secondary: "#F9FAFB",
-    tertiary: "#F3F4F6",
-  },
-};
+  // XP & Gamification
+  xp: "#8b5cf6", // Purple for experience points
+  streak: "#f59e0b", // Amber for streaks
 
-export type Colors = typeof colors;
+  // Semantic shortcuts
+  text: {
+    primary: "#111827", // neutral.900
+    secondary: "#6b7280", // neutral.500
+    tertiary: "#9ca3af", // neutral.400
+    inverse: "#ffffff", // neutral.0
+  },
+
+  bg: {
+    primary: "#ffffff", // neutral.0
+    secondary: "#f9fafb", // neutral.50
+    tertiary: "#f3f4f6", // neutral.100
+  },
+
+  border: "#e5e7eb", // neutral.200
+};
